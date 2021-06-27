@@ -1,4 +1,4 @@
-# go-tree
+# go-channel
 
 ## build
 
