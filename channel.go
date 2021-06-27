@@ -87,15 +87,6 @@ func process_generate_tree(ch chan *Tree) {
 	ch <- t
 }
 
-func process_print_tree(ch chan *Tree) {
-	t := &Tree{}
-	for i := 0; i < 10; i++ {
-		n := rand.Intn(100)
-		t.insert(n)
-	}
-	ch <- t
-}
-
 func main() {
 	ch := make(chan *Tree)
 	go process_generate_tree(ch)
